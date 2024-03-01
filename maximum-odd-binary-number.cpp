@@ -8,9 +8,7 @@ public:
     string maximumOddBinaryNumber(string s) {
         unordered_map<char, int> cCount;
         string ans;
-        for (char c : s) {
-            cCount[c]++;
-        }
+        for (char c : s) {cCount[c]++;}
         int count1 = cCount['1'];
         int count0 = cCount['0'];
 
